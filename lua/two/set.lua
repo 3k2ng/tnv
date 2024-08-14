@@ -7,3 +7,5 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 
 vim.opt.ignorecase = true
+
+vim.opt.cursorline = true
