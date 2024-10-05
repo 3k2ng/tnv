@@ -25,6 +25,7 @@ return {
       cpp = { "clangd" },
       cmake = { "cmakelint" },
       lua = { "stylua" },
+      python = { "black" },
       rust = { "rustfmt" },
       zig = { "zls" },
     },
