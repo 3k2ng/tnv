@@ -3,6 +3,7 @@ return {
   build = ":TSUpdate",
   opts = {
     ensure_installed = {
+      "asm",
       "bash",
       "c",
       "cpp",
@@ -16,6 +17,7 @@ return {
       "luadoc",
       "markdown",
       "markdown_inline",
+      "python",
       "query",
       "vim",
       "vimdoc",
