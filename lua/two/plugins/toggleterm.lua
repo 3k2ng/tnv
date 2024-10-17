@@ -1,8 +1,8 @@
 return {
-  "akinsho/toggleterm.nvim",
-  version = "*",
-  keys = {
-    { "<C-`>", "<cmd>ToggleTerm<cr>" },
-  },
-  opts = {},
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    keys = {
+        { "<C-`>", "<cmd>ToggleTerm<cr>" },
+    },
+    opts = {},
 }
