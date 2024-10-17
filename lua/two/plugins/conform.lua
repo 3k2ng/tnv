@@ -23,7 +23,7 @@ return {
         formatters_by_ft = {
             c = { "clang-format" },
             cpp = { "clang-format" },
-            cmake = { "cmakelint" },
+            cmake = { "cmake-format" },
             lua = { "stylua" },
             python = { "black" },
             rust = { "rustfmt" },
