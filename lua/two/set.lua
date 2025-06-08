@@ -8,6 +8,8 @@ vim.opt.ignorecase = true
 vim.opt.cursorline = true
 vim.wo.signcolumn = "yes:2"
 
+vim.diagnostic.config({ virtual_text = true })
+
 vim.filetype.add({
     extension = {
         vert = "glsl",
