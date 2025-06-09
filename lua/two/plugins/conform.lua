@@ -28,6 +28,7 @@ return {
             python = { "black" },
             rust = { "rustfmt" },
             zig = { "zls" },
+            gdscript = { 'gdformat' },
         },
     },
 }

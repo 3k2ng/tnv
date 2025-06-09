@@ -21,6 +21,9 @@ return {
             "query",
             "vim",
             "vimdoc",
+            "gdscript",
+            "gdshader",
+            "godot_resource",
         },
         auto_install = true,
         highlight = {
