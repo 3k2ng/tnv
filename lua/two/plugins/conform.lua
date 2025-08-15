@@ -29,6 +29,8 @@ return {
             rust = { "rustfmt" },
             zig = { "zls" },
             gdscript = { 'gdformat' },
+            html = { "html_beautify" },
+            css = { "css_beautify" }
         },
     },
 }

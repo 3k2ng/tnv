@@ -58,7 +58,7 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        require('lspconfig').gdscript.setup {
+        lspconfig.gdscript.setup {
             capabilities = capabilities,
             on_attach = on_attach
         }
