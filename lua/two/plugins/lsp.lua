@@ -5,7 +5,6 @@ return {
         "hrsh7th/cmp-nvim-lsp",
     },
     config = function()
-        local lspconfig = require("lspconfig")
         local cnl = require("cmp_nvim_lsp")
         local opts = { noremap = true, silent = true }
         local on_attach = function()
@@ -21,7 +20,8 @@ return {
             vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)                         -- show documentation for what is under cursor
         end
         local capabilities = cnl.default_capabilities()
-        lspconfig.clangd.setup({
+        vim.lsp.enable("clangd")
+        vim.lsp.config("clangd", {
             cmd = {
                 "clangd",
                 "--background-index",
@@ -34,33 +34,40 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig.glsl_analyzer.setup({
+        vim.lsp.enable("glsl_analyzer")
+        vim.lsp.config("glsl_analyzer", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig.neocmake.setup({
+        vim.lsp.enable("neocmake")
+        vim.lsp.config("neocmake", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig.rust_analyzer.setup({
+        vim.lsp.enable("rust_analyzer")
+        vim.lsp.config("rust_analyzer", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig.lua_ls.setup({
+        vim.lsp.enable("lua_ls")
+        vim.lsp.config("lua_ls", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig.pyright.setup({
+        vim.lsp.enable("pyright")
+        vim.lsp.config("pyright", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig.zls.setup({
+        vim.lsp.enable("zls")
+        vim.lsp.config("zls", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        lspconfig.gdscript.setup {
+        vim.lsp.enable("gdscript")
+        vim.lsp.config("gdscript", {
             capabilities = capabilities,
             on_attach = on_attach
-        }
+        })
     end,
 }

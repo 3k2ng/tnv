@@ -30,7 +30,9 @@ return {
             zig = { "zls" },
             gdscript = { 'gdformat' },
             html = { "html_beautify" },
-            css = { "css_beautify" }
+            css = { "css_beautify" },
+            javascript = { "prettierd", "prettier", stop_after_first = true },
+            typescript = { "prettierd", "prettier", stop_after_first = true },
         },
     },
 }
