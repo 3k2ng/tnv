@@ -34,8 +34,8 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
         })
-        vim.lsp.enable("glsl_analyzer")
-        vim.lsp.config("glsl_analyzer", {
+        vim.lsp.enable("slangd")
+        vim.lsp.config("slangd", {
             capabilities = capabilities,
             on_attach = on_attach,
         })
@@ -56,11 +56,6 @@ return {
         })
         vim.lsp.enable("pyright")
         vim.lsp.config("pyright", {
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
-        vim.lsp.enable("zls")
-        vim.lsp.config("zls", {
             capabilities = capabilities,
             on_attach = on_attach,
         })

@@ -24,7 +24,7 @@ return {
         cmp.setup({
             formatting = {
                 expandable_indicator = true,
-                fields = { "abbr", "kind", "menu" },
+                fields = { "abbr", "icon", "kind", "menu" },
                 format = function(_, item)
                     local widths = {
                         abbr = vim.g.cmp_widths and vim.g.cmp_widths.abbr or 40,
